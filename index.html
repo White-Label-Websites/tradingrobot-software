@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Build a Trading Robot and Test It on Live Prices, Free | Trading Robot</title>
-<meta name="description" content="Set up a trading robot, check its backtest, then run it on live market prices with a virtual $10,000 under fixed risk limits. Free: no card, no deposit.">
+<meta name="description" content="Set up a trading robot and run it on live market prices with a virtual $10,000 under fixed risk limits. Free: no card, no deposit.">
 <link rel="canonical" href="https://tradingrobot.software/">
 <meta property="og:title" content="Build a Trading Robot and Test It on Live Prices, Free | Trading Robot">
-<meta property="og:description" content="Set up a trading robot, check its backtest, then run it on live market prices with a virtual $10,000 under fixed risk limits. Free: no card, no deposit.">
+<meta property="og:description" content="Set up a trading robot and run it on live market prices with a virtual $10,000 under fixed risk limits. Free: no card, no deposit.">
 <meta property="og:url" content="https://tradingrobot.software/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#f2f4ee">
 <link rel="preload" href="/assets/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" data-ga=""></script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a trading robot?", "acceptedAnswer": {"@type": "Answer", "text": "A program that places buy and sell orders on its own, following rules set in advance. Robot, bot and algorithm mean the same thing here."}}, {"@type": "Question", "name": "Is a backtest enough?", "acceptedAnswer": {"@type": "Answer", "text": "No. A backtest shows how the rules would have done on past prices. Running the robot on live prices, with fixed loss limits, shows how they do now."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing. Opening an account asks for no card and no deposit."}}, {"@type": "Question", "name": "Can I win or lose real money?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every robot trades a virtual balance. There is no deposit, no withdrawal and no payout: the only thing at stake is your strategy's record."}}, {"@type": "Question", "name": "What stops a test early?", "acceptedAnswer": {"@type": "Answer", "text": "A loss of 5% in a single day, or a total drawdown of 10%. Either one ends the challenge on the spot."}}, {"@type": "Question", "name": "Can I test more than one robot?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each robot gets its own virtual $10,000 balance, so you can compare versions of a strategy side by side."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a trading robot?", "acceptedAnswer": {"@type": "Answer", "text": "A program that places buy and sell orders on its own, following rules set in advance. Robot, bot and algorithm mean the same thing here."}}, {"@type": "Question", "name": "How long does a test last?", "acceptedAnswer": {"@type": "Answer", "text": "Level 1 lasts between 5 and 10 days. Level 2 needs at least 5 days and has no end date. Level 3 has neither a minimum nor a deadline."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing. Opening an account asks for no card and no deposit."}}, {"@type": "Question", "name": "Can I win or lose real money?", "acceptedAnswer": {"@type": "Answer", "text": "No. Every robot trades a virtual balance. There is no deposit, no withdrawal and no payout: the only thing at stake is your strategy's record."}}, {"@type": "Question", "name": "What stops a test early?", "acceptedAnswer": {"@type": "Answer", "text": "A loss of 5% in a single day, or a total drawdown of 10%. Either one ends the challenge on the spot."}}, {"@type": "Question", "name": "Can I test more than one robot?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each robot gets its own virtual $10,000 balance, so you can compare versions of a strategy side by side."}}]}
 </script>
 </head>
 <body>
@@ -32,7 +33,7 @@
     <div class="hero-copy">
       <p class="tag fade">Trading robot workshop <span>Free</span></p>
       <h1 class="fade f1">Build a trading robot. <mark>Test it on live prices with a virtual $10,000.</mark></h1>
-      <p class="intro fade f2">Choose a market, set your robot&rsquo;s rules and read its backtest. Then let it trade live prices under risk limits it cannot negotiate with.</p>
+      <p class="intro fade f2">Choose a market and set your robot&rsquo;s rules. Then let it trade live prices with a virtual $10,000, under risk limits it cannot negotiate with.</p>
       <figure class="curve fade f3" aria-labelledby="curve-cap">
         <svg viewBox="0 0 560 230" role="img" aria-label="Illustration: a robot's virtual balance on live prices, between a +10% target and a -10% limit">
           <line class="c-target" x1="0" y1="42" x2="560" y2="42"/>
@@ -66,8 +67,8 @@
     <ol class="stages">
       <li><span class="stage-n">01</span><h3>Choose a market</h3><p>Pick the instrument your robot will trade.</p></li>
       <li><span class="stage-n">02</span><h3>Set the rules</h3><p>Entry, exit and how much of the balance each trade uses.</p></li>
-      <li><span class="stage-n">03</span><h3>Read the backtest</h3><p>See how the rules would have behaved on past prices before going further.</p></li>
-      <li class="here"><span class="stage-n">04</span><h3>Run it live</h3><p>Your robot trades live prices with a virtual $10,000 and climbs the levels, or stops at a limit.</p></li>
+      <li><span class="stage-n">03</span><h3>Run it live</h3><p>Your robot trades live prices with a virtual $10,000. No card, no deposit.</p></li>
+      <li class="here"><span class="stage-n">04</span><h3>Climb or rebuild</h3><p>Hit the target to move up a level. Break a limit and the challenge ends, so you adjust the rules and start again.</p></li>
     </ol>
   </div>
 </section>
@@ -101,7 +102,7 @@
     </div>
     <div class="qa">
       <details open><summary>What is a trading robot?</summary><p>A program that places buy and sell orders on its own, following rules set in advance. Robot, bot and algorithm mean the same thing here.</p></details>
-      <details><summary>Is a backtest enough?</summary><p>No. A backtest shows how the rules would have done on past prices. Running the robot on live prices, with fixed loss limits, shows how they do now.</p></details>
+      <details><summary>How long does a test last?</summary><p>Level 1 lasts between 5 and 10 days. Level 2 needs at least 5 days and has no end date. Level 3 has neither a minimum nor a deadline.</p></details>
       <details><summary>How much does it cost?</summary><p>Nothing. Opening an account asks for no card and no deposit.</p></details>
       <details><summary>Can I win or lose real money?</summary><p>No. Every robot trades a virtual balance. There is no deposit, no withdrawal and no payout: the only thing at stake is your strategy's record.</p></details>
       <details><summary>What stops a test early?</summary><p>A loss of 5% in a single day, or a total drawdown of 10%. Either one ends the challenge on the spot.</p></details>
@@ -121,7 +122,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <nav aria-label="Footer"><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a></nav>
+    <nav aria-label="Footer"><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a><a href="/privacy-policy/#cookies" data-cookie-settings>Cookie settings</a></nav>
     <p class="copy">&copy; 2026 Trading Robot</p>
     <small>Educational simulator. All balances are virtual and no real money is traded. Nothing on this site is financial advice. Trading is high risk. Results on virtual money do not predict real results. Sign-up is handled by our partner AFFCOIN, and we may receive a commission when you open an account.</small>
   </div>

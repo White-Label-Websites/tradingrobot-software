@@ -10,29 +10,29 @@ UPDATED = "5 October 2026"
 SITE = {'domain': 'tradingrobot.software',
  'brand': 'Trading Robot',
  'script': 183,
+ 'ga': '',
  'theme': '#f2f4ee',
  'title': 'Build a Trading Robot and Test It on Live Prices, Free | Trading Robot',
- 'desc': 'Set up a trading robot, check its backtest, then run it on live market prices with a virtual '
-         '$10,000 under fixed risk limits. Free: no card, no deposit.',
+ 'desc': 'Set up a trading robot and run it on live market prices with a virtual $10,000 under fixed risk '
+         'limits. Free: no card, no deposit.',
  'tag': 'Trading robot workshop',
  'h1': 'Build a trading robot. <mark>Test it on live prices with a virtual $10,000.</mark>',
- 'intro': 'Choose a market, set your robot&rsquo;s rules and read its backtest. Then let it trade live '
-          'prices under risk limits it cannot negotiate with.',
+ 'intro': 'Choose a market and set your robot&rsquo;s rules. Then let it trade live prices with a virtual '
+          '$10,000, under risk limits it cannot negotiate with.',
  'join': 'Set up your first robot',
  'how_title': 'From a trading idea to a live robot in four steps',
  'stages': [('Choose a market', 'Pick the instrument your robot will trade.'),
             ('Set the rules', 'Entry, exit and how much of the balance each trade uses.'),
-            ('Read the backtest',
-             'See how the rules would have behaved on past prices before going further.'),
-            ('Run it live',
-             'Your robot trades live prices with a virtual $10,000 and climbs the levels, or stops at a '
-             'limit.')],
+            ('Run it live', 'Your robot trades live prices with a virtual $10,000. No card, no deposit.'),
+            ('Climb or rebuild',
+             'Hit the target to move up a level. Break a limit and the challenge ends, so you adjust the '
+             'rules and start again.')],
  'faq': [('What is a trading robot?',
           'A program that places buy and sell orders on its own, following rules set in advance. Robot, bot '
           'and algorithm mean the same thing here.'),
-         ('Is a backtest enough?',
-          'No. A backtest shows how the rules would have done on past prices. Running the robot on live '
-          'prices, with fixed loss limits, shows how they do now.')],
+         ('How long does a test last?',
+          'Level 1 lasts between 5 and 10 days. Level 2 needs at least 5 days and has no end date. Level 3 '
+          'has neither a minimum nor a deadline.')],
  'closing': 'Have a trading idea? Turn it into a robot and watch it trade.',
  'risk': 'Trading is high risk.'}
 
@@ -40,7 +40,7 @@ D = SITE["domain"]; B = SITE["brand"]; URL = f"https://{D}"
 
 FOOTER = f"""<footer class="foot">
   <div class="wrap">
-    <nav aria-label="Footer"><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a></nav>
+    <nav aria-label="Footer"><a href="/contact/">Contact</a><a href="/terms/">Terms</a><a href="/privacy-policy/">Privacy</a><a href="/legal-notice/">Legal notice</a><a href="/privacy-policy/#cookies" data-cookie-settings>Cookie settings</a></nav>
     <p class="copy">&copy; 2026 {B}</p>
     <small>Educational simulator. All balances are virtual and no real money is traded. Nothing on this site is financial advice. {SITE["risk"]} Results on virtual money do not predict real results. Sign-up is handled by our partner AFFCOIN, and we may receive a commission when you open an account.</small>
   </div>
@@ -70,6 +70,7 @@ def head(title, desc, path, jsonld=""):
 <link rel="preload" href="/assets/fonts/BricolageGrotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/consent.js" data-ga="{SITE["ga"]}"></script>
 {jsonld}</head>
 <body>
 """
@@ -293,18 +294,20 @@ page("privacy-policy", "Legal", "Privacy policy", f"Privacy policy | {B}",
           <tr><td>You visit any page</td><td>IP address, browser, pages requested (technical logs)</td><td>Deliver the site and keep it secure</td><td>Legitimate interest</td></tr>
         </tbody>
       </table>
-      <p>We do not sell your data, and this site uses no analytics or advertising cookies.</p>
+      <p>We do not sell your data and we do not run advertising trackers on this site. Analytics only uses cookies if you accept them (see section 5).</p>
       <h2>3. Who receives it</h2>
       <ul>
         <li><strong>AFFCOIN</strong> and the providers it works with, for everything you type in the sign-up form, sent directly from your browser to its servers.</li>
         <li><strong>Cloudflare</strong>, which relays contact-form messages to our mailbox.</li>
         <li><strong>GitHub</strong>, which hosts the site and keeps technical access logs.</li>
+        <li><strong>Google</strong> (Google Analytics), only if you accept analytics cookies: pages viewed, approximate location, device and browser, used to count visits. IP addresses are not stored by Google Analytics 4. Data may be processed in the United States under the EU-US Data Privacy Framework.</li>
       </ul>
       <p>Some of these providers are based in the United States. Transfers rely on the safeguards they offer, such as the EU-US Data Privacy Framework or standard contractual clauses.</p>
       <h2>4. How long we keep it</h2>
       <p>Contact messages are kept for up to 3 years after our last exchange, then deleted. Account data is kept by AFFCOIN for as long as your account is open and then according to its policy.</p>
       <h2 id="cookies">5. Cookies</h2>
-      <p>This site sets no cookies of its own. The sign-up widget, loaded from affcoin.com, may store what it needs to run the form and your session. Those cookies are covered by AFFCOIN&rsquo;s policy.</p>
+      <p>We use Google Analytics cookies (<code>_ga</code>, <code>_ga_*</code>, kept up to 13 months) to count visits and see which pages are useful. They are set only after you click &ldquo;Accept&rdquo; in the cookie banner. If you decline, Google Analytics runs without cookies and receives no identifier for you. We do not use advertising cookies. Your choice is stored in your browser and you can change it at any time with the <a href="/privacy-policy/#cookies" data-cookie-settings>cookie settings</a> link at the bottom of every page.</p>
+      <p>Our fonts are served from our own host. The sign-up widget, loaded from affcoin.com, may store what it needs to run the form and your session. Those cookies are covered by AFFCOIN&rsquo;s policy.</p>
       <h2>6. Your rights</h2>
       <p>You can ask to access, correct or delete your data, object to its use, restrict it, or receive a copy. To exercise a right, use our <a href="/contact/">contact form</a>, or write to <a href="mailto:support@affcoin.com">support@affcoin.com</a> for account data. You can also complain to your data protection authority.</p>
       <h2>7. Changes</h2>
